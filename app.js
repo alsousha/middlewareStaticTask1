@@ -3,22 +3,22 @@ const app = express();
 const port = 3000;
 const path = require('path');
 
-// Route for main page
+// ** Route for main page
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 })
 
-// Route for CSS
+// ** Route for CSS
 app.get('/style.css', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'style.css'));
 });
 
-// Route for JS
+// ** Route for JS
 app.get('/js.js', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'js.js'));
 });
 
-// Route for image
+// ** Route for image
 app.get('/1.jpg', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', '1.jpg'));
 });
